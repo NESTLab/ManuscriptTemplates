@@ -82,7 +82,12 @@ bindingoffset=10mm, top=25mm,bottom=25mm}
 \setlength{\topmargin}{-0.2in}
 \setlength{\oddsidemargin}{0.3in}
 \setlength{\evensidemargin}{0.3in}
-\setlength{\headsep}{0.0in}
+\setlength{\headsep}{0.2in}
+
+%
+% Header and Footer Rules
+%
+\makeheadrule{headings}{\textwidth}{0.3pt}
 
 % 
 % Document information
