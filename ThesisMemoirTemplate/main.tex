@@ -1,0 +1,116 @@
+% Masters Thesis Template
+% Maintained by NEST Lab, WPI
+% Template is based on memoir class and can be edited as per necessity
+% Memoir Class: http://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf
+
+\documentclass{thesis}
+
+% Enter your information to automatically generate the title page
+\author{John Doe}                                   % Your name
+\thesistitle{Template - How to attain awesomeness!} % Your Thesis title
+\department{Robotics Department}                    % Your department name
+\degree{Masters of Science/Doctor of Philosophy}    % Your degree for which you are defending the thesis
+\date{May 2018}                                     % Month and year you are defending the thesis
+\advisor{Dr. Carlo Pinciroli}                       % Name of the advisor
+\firstcommittee{Committee 1}                           % Name of the committee member
+\firstcommitteerole{, His/Her Role in department}       % Leave blank if you don't want to include this
+\secondcommittee{Committee 2}                           % Name of the committee member
+\secondcommitteerole{, His/Her Role in department}       % Leave blank if you don't want to include this
+% Fill this only if you are a PhD Student because they have 3 members on the committee
+\thirdcommittee{}                           % Name of the committee member
+\thirdcommitteerole{, His/Her Role in department}       % Leave blank if you don't want to include this
+
+% Add any aditional packages here
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+
+
+% Document Starts Here
+\begin{document}
+
+% Title Page Creating
+\maketitle
+\newpage
+
+% 
+% Spacing Options
+% For Memoir Package
+% 
+\OnehalfSpacing
+
+\pagenumbering{roman} % Remove this command if you dont want roman numbering
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+\newpage
+\begin{center}
+	\textbf{Acknowledgements}
+\end{center}
+
+\blindtext
+
+\clearpage
+
+
+% This command generated table of contents on its own
+\newpage
+\tableofcontents
+
+% Any figure added to the thesis will be automatically added to this list
+\newpage
+\listoffigures
+
+% Any table added to the thesis will be automatically added to this list
+\newpage
+\listoftables
+
+
+% And we need a clear separation between preface and text, otherwise
+% the numbering gets confused.
+
+\clearpage
+
+% And now - tataa - the text.
+% This is the place to become really creative.
+
+% From here on, we need arabic numbering again and we need to start
+% from 1.
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% A report can have many chapters and each chapter can have sections, subsections, subsubsection 
+\chapter{Introduction}
+
+\blindtext
+This is how you cite paper to the file in bibtext. Blablabla said Nobody ~\cite{Nobody06}.
+
+\section{Background}
+
+\subsection{Sub Section}
+
+\subsubsection{Sub Sub Section}
+\blindtext
+
+
+\appendix
+
+\chapter{Additional}
+\blindtext
+
+
+% single spacing for bibliography
+
+\bibliography{bibliography}{}
+\bibliographystyle{acm}
+
+\end{document}
+
+
+
+
+
+
